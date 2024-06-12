@@ -393,7 +393,7 @@ function simpleanime() {
         scrollTrigger: {
             trigger: ".maazaName",
             scroller: "body",
-            markers:true,
+          
             start: "top 100%",
             end: "top 0%",
             scrub: 2
@@ -614,7 +614,7 @@ function Mobileowl() {
 document.addEventListener('DOMContentLoaded', Mobileowl);
 
 
-loco();
+// loco();
 simpleanime();
 gsap.set(sliders[currentSlider], { zIndex: 20, opacity: 1 });
 showNextSlider();
