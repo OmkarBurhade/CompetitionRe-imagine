@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+* {
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+    font-family: "Signika Negative", sans-serif;
+}
+
+html,
+body {
+    Width: 100%;
+    Height: 100%;
+    /* scroll-behavior: smooth; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.aboutBox::-webkit-scrollbar {
+    display: none;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel1::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    background-color: #C6E7DD;
+    z-index: 1;
+    isolation: isolate;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+button #fristF {
+ 
+    position: absolute;
+    z-index: -1;
+    width: 33.333%;
+    border-radius: 50%;
+    height: 100%;
+    left: -5%;
+    top: 20%;
+    opacity: 0;
+    transition: all ease-out 0.3s;
+}
+
+button:hover #fristF {
+    opacity: 1;
+}
+
+button #secF {
+    position: absolute;
+    z-index: -1;
+    width: 33.333%;
+    border-radius: 50%;
+    height: 100%;
+    left: -5%;
+    top: 20%;
+    opacity: 0;
+    transition: all ease-out 0.3s;
+}
+
+button:hover #secF {
+    opacity: 1;
+}
+
+button #trheeF {
+    position: absolute;
+    z-index: 1;
+    width: 33.333%;
+    border-radius: 50%;
+    height: 100%;
+    left: 65%;
+    top: -40%;
+    opacity: 0;
+    transform: rotate(300deg);
+    transition: all ease-out 0.3s;
+}
+
+button:hover #trheeF {
+    opacity: 1;
+}
+
+button #fourF {
+    position: absolute;
+    z-index: -1;
+    width: 23%;
+    left: 80%;
+    border-radius: 50%;
+    height: 100%;
+    top: -10%;
+    left: 82%;
+    transform: rotate(200deg);
+    opacity: 0;
+    transition: all ease-out 0.3s;
+}
+
+button:hover #fourF {
+    opacity: 1;
+}
+
+button:hover>a {
+    color: #004A5C;
+    font-weight: bold !important;
+}
+
+.redirect {
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+#Soursop:hover .redirect {
+    opacity: 1;
+}
+
+.itemImage img {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    transition: all 0.2s linear;
+}
+
+
+/* soursop hover  */
+
+#Soursop:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Soursop {
+    background-image: linear-gradient(to top, #4d8b1be8, #B9FF75 35%);
+}
+
+#Soursop:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 12%;
+    left: 42%;
+    transition: all 0.2s linear;
+}
+
+#Soursop:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 22%;
+    left: 15%;
+    transition: all 0.2s linear;
+}
+
+#Soursop:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 48%;
+    left: 10%;
+    transition: all 0.2s linear;
+}
+
+#Soursop:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 40%;
+    left: 78%;
+    transition: all 0.2s linear;
+}
+
+#Soursop:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 21%;
+    left: 68%;
+    transition: all 0.2s linear;
+  
+}
+
+
+/* soursop hover end */
+
+
+/* Passionfruit hover */
+
+#Passionfruit:hover .redirect {
+    opacity: 1;
+}
+
+#Passionfruit {
+    background-image: linear-gradient(to top, #8c1d2ccc, #ff94cb 35%);
+}
+
+#Passionfruit:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Passionfruit:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 15%;
+    left: 42%;
+    transition: all 0.2s linear;
+}
+
+#Passionfruit:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 25%;
+    left: 20%;
+    transition: all 0.2s linear;
+}
+
+#Passionfruit:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 48%;
+    left: 13%;
+    transition: all 0.2s linear;
+}
+
+#Passionfruit:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 40%;
+    left: 78%;
+    transition: all 0.2s linear;
+}
+
+#Passionfruit:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 24%;
+    left: 65%;
+    transition: all 0.2s linear;
+}
+
+
+/* Passionfruit hover end*/
+
+
+/* Mango hover */
+
+#Mango:hover .redirect {
+    opacity: 1;
+}
+
+#Mango {
+    background-image: linear-gradient(to top, #ED7B1A, #FFE047 35%);
+}
+
+#Mango:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Mango:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 10%;
+    left: 42%;
+    transition: all 0.2s linear;
+}
+
+#Mango:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 25%;
+    left: 17%;
+    transition: all 0.2s linear;
+}
+
+#Mango:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 48%;
+    left: 11%;
+    transition: all 0.2s linear;
+}
+
+#Mango:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 45%;
+    left: 78%;
+    transition: all 0.2s linear;
+}
+
+#Mango:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 24%;
+    left: 65%;
+    transition: all 0.2s linear;
+}
+
+
+/* Mango hover end*/
+
+
+/* Tropical hover */
+
+#Tropical:hover .redirect {
+    opacity: 1;
+}
+
+#Tropical {
+    background-image: linear-gradient(to top, #a8241dcc, #FFB732 35%);
+}
+
+#Tropical:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Tropical:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 10%;
+    left: 42%;
+    transition: all 0.2s linear;
+}
+
+#Tropical:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 25%;
+    left: 17%;
+    transition: all 0.2s linear;
+}
+
+#Tropical:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 48%;
+    left: 11%;
+    transition: all 0.2s linear;
+}
+
+#Tropical:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 45%;
+    left: 78%;
+    transition: all 0.2s linear;
+}
+
+#Tropical:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 24%;
+    left: 65%;
+    transition: all 0.2s linear;
+}
+
+
+/* Tropical hover end*/
+
+
+/* Guava hover */
+
+#Guava:hover .redirect {
+    opacity: 1;
+}
+
+#Guava {
+    background-image: linear-gradient(to top, #66892E, #DBE700 35%);
+}
+
+#Guava:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Guava:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 12%;
+    left: 40%;
+    transition: all 0.2s linear;
+}
+
+#Guava:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 25%;
+    left: 17%;
+    transition: all 0.2s linear;
+}
+
+#Guava:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 44%;
+    left: 11%;
+    transition: all 0.2s linear;
+}
+
+#Guava:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 45%;
+    left: 75%;
+    transition: all 0.2s linear;
+}
+
+#Guava:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 24%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Guava hover end*/
+
+
+/* Lychee hover */
+
+#Lychee:hover .redirect {
+    opacity: 1;
+}
+
+#Lychee {
+    background-image: linear-gradient(to top, #672a4ee1, #FF9FB6 35%);
+}
+
+#Lychee:hover .itemImage img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#Lychee:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 5rem;
+    top: 10%;
+    left: 40%;
+    transition: all 0.2s linear;
+}
+
+#Lychee:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 25%;
+    left: 17%;
+    transition: all 0.2s linear;
+}
+
+#Lychee:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 44%;
+    left: 11%;
+    transition: all 0.2s linear;
+}
+
+#Lychee:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 45%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+#Lychee:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 24%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Lychee hover end*/
+
+
+/* Pomegranate hover*/
+
+#Pomegranate:hover .redirect {
+    opacity: 1;
+}
+
+#Pomegranate {
+    background-image: linear-gradient(to top, #91141A, #EC756B 35%);
+}
+
+#Pomegranate .itemImage img {
+    width: 100%;
+    height: 110%;
+}
+
+#Pomegranate:hover .itemImage img {
+    width: 100%;
+    height: 120%;
+    top: 0;
+}
+
+#Pomegranate:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 1.5rem;
+    top: 19%;
+    left: 45%;
+    transition: all 0.2s linear;
+}
+
+#Pomegranate:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 2.2rem;
+    top: 27%;
+    left: 25%;
+    transition: all 0.2s linear;
+}
+
+#Pomegranate:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 2.2rem;
+    top: 45%;
+    left: 15%;
+    transition: all 0.2s linear;
+}
+
+#Pomegranate:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 1.5rem;
+    top: 53%;
+    left: 80%;
+    transition: all 0.2s linear;
+}
+
+#Pomegranate:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 2.2rem;
+    top: 30%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Pomegranate hover end*/
+
+
+/* Banana hover*/
+
+#Banana:hover .redirect {
+    opacity: 1;
+}
+
+#Banana {
+    background-image: linear-gradient(to top, #da960d, #ffce52 35%);
+}
+
+#Banana .itemImage img {
+    width: 100%;
+    height: 110%;
+}
+
+#Banana:hover .itemImage img {
+    width: 100%;
+    height: 120%;
+    top: 0;
+}
+
+#Banana:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 15%;
+    left: 45%;
+    transition: all 0.2s linear;
+}
+
+#Banana:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 27%;
+    left: 20%;
+    transition: all 0.2s linear;
+}
+
+#Banana:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 50%;
+    left: 10%;
+    transition: all 0.2s linear;
+}
+
+#Banana:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 53%;
+    left: 80%;
+    transition: all 0.2s linear;
+}
+
+#Banana:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 30%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Banana hover end*/
+
+
+/* Coconut hover*/
+
+#Coconut:hover .redirect {
+    opacity: 1;
+}
+
+#Coconut {
+    background-image: linear-gradient(to top, #61270Be8, #EFAD74 35%);
+}
+
+#Coconut .itemImage img {
+    width: 100%;
+    height: 110%;
+}
+
+#Coconut:hover .itemImage img {
+    width: 100%;
+    height: 120%;
+    top: 0;
+}
+
+#Coconut #itemSlice1 {
+    position: absolute;
+    opacity: 0;
+    width: 3rem;
+    top: 50%;
+    left: 50%;
+    transition: all 0.2s linear;
+}
+
+#Coconut:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 90%;
+    top: 8%;
+    left: 10%;
+    transition: all 0.2s linear;
+}
+
+#Coconut #itemSlice2 {
+    position: absolute;
+    opacity: 0;
+    width: 3rem;
+    top: 50%;
+    left: 50%;
+    transition: all 0.2s linear;
+}
+
+#Coconut:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 90%;
+    top: 8%;
+    left: -15%;
+    transition: all 0.2s linear;
+}
+
+#Coconut #itemSlice3 {
+    position: absolute;
+    opacity: 0;
+    width: 3rem;
+    top: 50%;
+    left: 50%;
+    transition: all 0.2s linear;
+}
+
+#Coconut:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 80%;
+    top: 8%;
+    left: 32%;
+    transition: all 0.2s linear;
+}
+
+#Coconut:hover #itemSlice4 {
+    display: none;
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 53%;
+    left: 80%;
+    transition: all 0.2s linear;
+}
+
+#Coconut:hover #itemSlice5 {
+    display: none;
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 30%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Coconut hover end*/
+
+
+/* Papaya hover*/
+
+#Papaya:hover .redirect {
+    opacity: 1;
+}
+
+#Papaya {
+    background-image: linear-gradient(to top, #1C6123cc, #97c82e 35%);
+}
+
+#Papaya .itemImage img {
+    width: 100%;
+    height: 100%;
+}
+
+#Papaya:hover .itemImage img {
+    width: 100%;
+    height: 110%;
+    top: 0;
+}
+
+#Papaya:hover #itemSlice1 {
+    position: absolute;
+    opacity: 1;
+    width: 4rem;
+    top: 15%;
+    left: 40%;
+    transition: all 0.2s linear;
+}
+
+#Papaya:hover #itemSlice2 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 28%;
+    left: 15%;
+    transition: all 0.2s linear;
+}
+
+#Papaya:hover #itemSlice3 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 50%;
+    left: 10%;
+    transition: all 0.2s linear;
+}
+
+#Papaya:hover #itemSlice4 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 51%;
+    left: 72%;
+    transition: all 0.2s linear;
+}
+
+#Papaya:hover #itemSlice5 {
+    position: absolute;
+    opacity: 1;
+    width: 3rem;
+    top: 30%;
+    left: 70%;
+    transition: all 0.2s linear;
+}
+
+
+/* Papaya hover end*/
+
+
+/* .insta:hover a {
+    color: #C5122A;
+    transition: all 0.2s linear;
+} */
