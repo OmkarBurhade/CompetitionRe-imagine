@@ -614,7 +614,7 @@ function Mobileowl() {
 document.addEventListener('DOMContentLoaded', Mobileowl);
 
 
-// loco();
+loco();
 simpleanime();
 gsap.set(sliders[currentSlider], { zIndex: 20, opacity: 1 });
 showNextSlider();
