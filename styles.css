@@ -18,7 +18,8 @@ body::-webkit-scrollbar {
 }
 
 .aboutBox::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
+   
 }
 .carousel::-webkit-scrollbar {
     display: none;
