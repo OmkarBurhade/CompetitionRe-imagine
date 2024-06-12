@@ -47,7 +47,7 @@ function cursor() {
   
     const heroSlider = document.querySelector('.heroSlider');
     heroSlider.addEventListener('mouseenter', function () {
-        cursor.innerHTML =  `<a href="javascript:void(0); " class="text-[20px] text-[#000000] font-semibold">discover</a>`;
+        cursor.innerHTML =  `<a href="javascript:void(0); " class="text-[20px] text-[#000000] font-medium">discover</a>`;
         gsap.to('.cursor', {
             duration: 0.1,
             opacity: 1,
