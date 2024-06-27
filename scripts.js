@@ -401,14 +401,26 @@ function simpleanime() {
         }
     })
     gsap.from('.enjoy-text', {
-        y: '40',
+        y: '-40',
         opacity: 0,
         stagger: 0.5,
         ease: "power4.out",
         scrollTrigger: {
             trigger: ".headline",
             scroller: "body",
-
+            start: "top 60%",
+            end: "top 50%",
+            scrub: 2
+        }
+    })
+    gsap.from('.aboutbgfirst', {
+        y: '-40',
+        opacity: 0,
+        stagger: 0.5,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".headline",
+            scroller: "body",
             start: "top 60%",
             end: "top 50%",
             scrub: 2
