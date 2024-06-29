@@ -3,6 +3,139 @@ const MangoSclice = document.querySelectorAll('.MangoSclice');
 const leaves = document.querySelectorAll('.leaves');
 let currentSlider = 0;
 
+
+function webLoader() {
+    const images = document.querySelectorAll('.loading-image');
+    let currentImageIndex = 0;
+
+    function showRandomImage() {
+        // Hide all images
+      
+        gsap.to(images[2],{
+            duration: 1,
+            delay: 0,
+            opacity:1,
+            ease: "power1.out",
+            stagger: .2,
+           
+        })
+        gsap.to(images[3],{
+            delay: 0,
+            duration: 1,
+            ease: "power1.out",
+            opacity:1
+        })
+        gsap.to(images[1],{
+            duration: 1,
+            delay: .5,
+            ease: "power1.out",
+            opacity:1
+        })
+        gsap.to(images[4],{
+            delay: .5,
+            duration: 1,
+            ease: "power1.out",
+            opacity:1
+        })
+        gsap.to(images[0],{
+            delay: 1,
+            duration: 1,
+            ease: "power1.out",
+            opacity:1
+        })
+        gsap.to(images[5],{
+            delay: 1,
+            duration: 1,
+            ease: "power1.out",
+            opacity:1
+        })
+      
+
+        // // Show a random image
+        // currentImageIndex = Math.floor(Math.random() * images.length);
+        // images[currentImageIndex].style.opacity = '1';
+    }
+
+    // Call showRandomImage every second
+    showRandomImage()
+        
+
+    var tl = gsap.timeline();
+
+    tl
+        
+        .to(".loader", {
+            height: "100vh",
+            // delay:-0.2,
+            duration: 1,
+            ease: "power1.out"
+        })
+        .to(".Loaderback", {
+            height: 0,
+            // delay:-0.2,
+            duration: 0,
+            ease: Circ.easeInOut
+        })
+        .to(".slowly", {
+            duration: 1.5,
+            ease: "power5",
+            opacity:1
+        })
+        .to(".image-container", {
+            y: "-100%",
+            delay:2,
+            duration: .5,
+            stagger: .2,
+            ease: Power3.easeInOut
+        })
+        .to(".loaderLogo", {
+            y: "-100%",
+            delay:-0.5,
+            duration: .5,
+            stagger: .2,
+            ease: Power3.easeInOut
+        })
+       
+        .to(".loader", {
+            height: 0,
+            delay:-0.2,
+            duration: 1,
+            ease: Circ.easeInOut
+        })
+        
+        .to(".orangelight", {
+            height: 0,
+            delay: -0.6,
+            duration: 1,
+            ease: Circ.easeInOut
+        })
+        .to(".orangeDark", {
+            height: 0,
+            delay: -0.5,
+            duration: 1,
+            ease: Circ.easeInOut
+        })
+       
+        
+       
+        // })
+        // .to("#green", {
+        //     height: "0%",
+        //     delay: -.4,
+        //     duration: 1,
+        //     ease: Circ.easeInOut,
+        //     onComplete: function() {
+        //         animatehomepage();
+        //     }
+        // })
+
+        
+
+
+   
+
+}
+webLoader()
 function cursor() {
     let cursor = document.querySelector('.cursor');
     const main = document.querySelector('#main');
