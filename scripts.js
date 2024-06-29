@@ -67,6 +67,7 @@ function webLoader() {
         .to(".loader", {
             height: "100vh",
             // delay:-0.2,
+            top: "0%",
             duration: 1,
             ease: "power1.out"
         })
@@ -98,6 +99,7 @@ function webLoader() {
        
         .to(".loader", {
             height: 0,
+            top: "-30%",
             delay:-0.2,
             duration: 1,
             ease: Circ.easeInOut
@@ -105,35 +107,16 @@ function webLoader() {
         
         .to(".orangelight", {
             height: 0,
-            delay: -0.6,
+            delay: -0.7,
             duration: 1,
             ease: Circ.easeInOut
         })
         .to(".orangeDark", {
             height: 0,
-            delay: -0.5,
+            delay: -0.9,
             duration: 1,
             ease: Circ.easeInOut
         })
-       
-        
-       
-        // })
-        // .to("#green", {
-        //     height: "0%",
-        //     delay: -.4,
-        //     duration: 1,
-        //     ease: Circ.easeInOut,
-        //     onComplete: function() {
-        //         animatehomepage();
-        //     }
-        // })
-
-        
-
-
-   
-
 }
 webLoader()
 function cursor() {
@@ -261,7 +244,7 @@ function showNextSlider() {
     });
 
     currentSlider = (currentSlider + 1) % sliders.length;
-    setTimeout(showNextSlider, 6000);
+    setTimeout(showNextSlider, 4500);
 
     sliders.forEach((el) => {
         el.addEventListener('mousemove', function(det) {
