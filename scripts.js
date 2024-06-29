@@ -718,7 +718,7 @@ function Mobileowl() {
 
     function getDataFromArray() {
         const createImageElements = (images) => {
-            return images.map((src, idx) => `<img id="itemSlice${idx + 1}" class="absolute top-[50%] opacity-0 left-[50%]" src="${src}" alt="">`).join('');
+            return images.map((src, idx) => `<img id="itemSlice${idx + 1}" class="absolute top-[50%] opacity-1 left-[50%]" src="${src}" alt="">`).join('');
         };
 
         const clutter = itemsData.map((elem) => `
